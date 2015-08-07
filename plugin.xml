@@ -15,7 +15,7 @@
         <clobbers target="ParsePlugin"/>
     </js-module>
 
-    <dependency id="com.google.playservices" />
+    <dependency id="cordova-plugin-googleplayservices" />
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
