@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" id="se.frostyelk.cordova.parse.plugin" version="0.1.2">
-    <name>Cordova Parse plugin</name>
-    <description>Cordova plugin for Parse</description>
-    <author>Arne Sikstrom</author>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" id="mobi.glowworm.parse.pushhandler" version="0.2.0">
+    <name>Glowworm Parse Push Message plugin</name>
+    <description>Cordova plugin for receiving Push Messages from Parse.com</description>
+    <author>Richard Le Mesurier (original code by Arne Sikstrom)</author>
     <license>Apache License, Version 2.0</license>
     <keywords>Parse</keywords>
 
@@ -20,14 +20,14 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ParsePlugin">
-                <param name="android-package" value="se.frostyelk.cordova.parse.plugin.ParsePlugin"/>
+                <param name="android-package" value="mobi.glowworm.parse.pushhandler.ParsePlugin"/>
             </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <service android:name="com.parse.PushService"/>
 
-            <receiver android:name="se.frostyelk.cordova.parse.plugin.ParseWakeUpReceiver">
+            <receiver android:name="mobi.glowworm.parse.pushhandler.ParseWakeUpReceiver">
                 <intent-filter>
                     <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                     <action android:name="android.intent.action.USER_PRESENT"/>
@@ -53,7 +53,7 @@
             </receiver>
 
             <receiver android:exported="false"
-                      android:name="se.frostyelk.cordova.parse.plugin.ParsePluginBroadcastReciever">
+                      android:name="mobi.glowworm.parse.pushhandler.ParsePluginBroadcastReciever">
                 <intent-filter>
                     <action android:name="com.parse.push.intent.RECEIVE"/>
                     <action android:name="com.parse.push.intent.OPEN"/>
@@ -79,10 +79,10 @@
         <source-file src="libs/android/parse/bolts-android-1.1.4.jar" target-dir="libs" framework="true"/>
         <source-file src="libs/android/parse/ParseCrashReporting-1.8.2.jar" target-dir="libs" framework="true"/>
 
-        <source-file src="src/android/ParsePlugin.java" target-dir="src/se/frostyelk/cordova/parse/plugin/"/>
+        <source-file src="src/android/ParsePlugin.java" target-dir="src/mobi/glowworm/parse/pushhandler/"/>
         <source-file src="src/android/ParsePluginBroadcastReciever.java"
-                     target-dir="src/se/frostyelk/cordova/parse/plugin/"/>
-        <source-file src="src/android/ParseWakeUpReceiver.java" target-dir="src/se/frostyelk/cordova/parse/plugin/"/>
+                     target-dir="src/mobi/glowworm/parse/pushhandler/"/>
+        <source-file src="src/android/ParseWakeUpReceiver.java" target-dir="src/mobi/glowworm/parse/pushhandler/"/>
     </platform>
 
 
