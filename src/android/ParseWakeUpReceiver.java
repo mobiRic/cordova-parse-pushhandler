@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2015 Glowworm Software
  * Copyright (C) 2015 Frosty Elk AB
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package se.frostyelk.cordova.parse.plugin;
+package mobi.glowworm.parse.pushhandler;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

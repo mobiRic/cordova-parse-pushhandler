@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package se.frostyelk.cordova.parse.plugin;
+package mobi.glowworm.parse.pushhandler;
 
 import android.app.Activity;
 import android.content.Context;
