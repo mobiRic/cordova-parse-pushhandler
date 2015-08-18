@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" id="cordova-plugin-parse-pushhandler" version="0.2.1">
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" id="cordova-plugin-parse-pushhandler" version="0.2.2">
     <name>Parse Push Message plugin</name>
     <description>Cordova plugin for receiving Push Messages from Parse.com</description>
     <author>Richard Le Mesurier (original code by Arne Sikstrom)</author>
@@ -8,7 +8,7 @@
     <keywords>Parse</keywords>
 
     <engines>
-        <engine name="cordova" version=">=5.0.0"/>
+        <engine name="cordova" version=">=4.0.0"/>
     </engines>
 
     <js-module src="www/ParsePlugin.js" name="ParsePlugin">
