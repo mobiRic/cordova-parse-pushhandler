@@ -1,7 +1,7 @@
 Glowworm Parse Push Message plugin
 ==================================
 
-A Cordova plugin for receiving Push Messages from Parse.com.
+A Cordova plugin for handling Push Messages from Parse.com.
 
 Requires Cordova v4.0.0 or above.
 
